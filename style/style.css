@@ -23,12 +23,16 @@ body {
   background: black;
 }
 
+
 /* shared style list  */
 .display-flex {
   display: flex;
 }
 
 /* nav-bar style list  */
+.fitness i {
+  display: none;
+}
 
 .nav-bar {
 
@@ -121,10 +125,9 @@ body {
 }
 
 .habit-title h2 {
-  width: 29rem;
   font-size: 2.5rem;
   font-weight: 800;
-  margin: 0 284px;
+  margin: 0 270px;
 }
 
 .habit-title p {
@@ -164,6 +167,57 @@ body {
   text-align: center;
 }
 
+/* run section style  */
+.run-section {
+
+  width: 1060px;
+  /* height: 371px; */
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  margin: 62px 0px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.run-title h2 {
+  /* width: 443px; */
+  /* height: 116px; */
+  margin: 14px 0px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 42px;
+  font-weight: 800;
+
+}
+
+.run-title p {
+  width: 443px;
+  margin: 10px 0px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.run-title button {
+  width: 180px;
+  height: 50px;
+  margin: 15px 0px;
+  border-radius: 40px;
+  background: rgb(230, 83, 60);
+}
+
+.run-img img {
+  width: 345px;
+  height: 290px;
+  border-radius: 18px;
+  object-fit: cover;
+  object-position: 100% 0;
+  margin-top: 20px;
+}
+
+
 
 /* media quary for small devices  */
 
@@ -172,8 +226,13 @@ body {
     display: none;
   }
 
+  .fitness i {
+    display: block;
+  }
+
   .fitness {
     align-items: center;
+
   }
 
   .fitness i {
@@ -195,7 +254,8 @@ body {
     font-size: 36px;
     font-weight: 800;
   }
-  .habits{
+
+  .habits {
     margin: 0 auto;
   }
 
@@ -216,6 +276,27 @@ body {
     font-size: 14px;
     font-weight: 400;
     margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .run-section {
+    flex-direction: column;
+    width: 353px;
+    height: 615px;
+    margin-top: 15px;
+  }
+  .run-title{
+    width: 287px;
+  }
+
+  .run-title p {
+    font-size: 14px;
+    font-weight: 400;
+    width: 287px;
+  }
+  .run-img{
+    width: 100%;
+    height: 100%;
   }
 
 }
