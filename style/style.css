@@ -84,12 +84,18 @@ body {
 
 /* hero section style  */
 
-.box-1 {
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(20px);
-  background: rgba(48, 48, 48, 0.54);
+.hero-img-card{
+  position: relative;
+}
+.card-1 ,.card-2{
+  position: absolute;
+}
+.card-1{
+  bottom: 60px;
+}
+.card-2{
+  right: 20px;
+  top: 190px;
 }
 
 #special {
