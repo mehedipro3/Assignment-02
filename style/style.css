@@ -174,8 +174,8 @@ body {
 }
 
 /* run section style  */
-.run-section {
 
+.run-section {
   width: 1060px;
   /* height: 371px; */
   border-radius: 18px;
@@ -275,24 +275,23 @@ td {
 .bmi-chart {
   justify-content: space-around;
   background: rgb(34, 34, 34);
-  height: 470px;
+  min-height: 470px;
   align-items: center;
 }
 
-.bmi-cal h2 {
+.bmi-dis h2 {
   font-size: 28px;
   font-weight: 900;
-  margin: 10px 0;
 }
 
-.bmi-cal p {
+.bmi-dis p {
   font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   margin: 10px 0;
 }
 
-.bmi-cal form select {
+.bmi-dis  select {
   width: 283px;
   height: 48px;
   margin: 0 12px;
@@ -303,18 +302,23 @@ td {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.bmi-cal form input {
-  width: 282.5px;
-  height: 48px;
+.bmi-dis input {
+  min-width: 282.5px;
+  min-height: 48px;
   margin: 0 12px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   margin: 5px;
   color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
 }
 
-#factor {
-  width: 579px;
+.bmi-cal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#factor{
+  grid-column: span 2;
 }
 
 .bmi-chart button {
@@ -326,8 +330,72 @@ td {
   background: rgb(230, 83, 60);
 }
 
+/* team section style  */
 
+.team-title {
+  text-align: center;
+  margin: 75px 0;
+}
 
+.team-title h2 {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.team-title p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 14px 0px;
+}
+
+.team-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* width: 1060px;
+  height: 604px; */
+  margin: 0px 20px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  gap: 20px;
+}
+
+.team-img img {
+  width: 310px;
+  height: 260px;
+
+  border-radius: 18px;
+  
+  object-fit: cover;
+  align-items: center;
+}
+
+#img-04 {
+  object-position: 50% 0;
+}
+
+.team-img .team-box {
+  position: relative;
+}
+
+.team-img .team-dis {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+}
+
+.team-img h3 {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.team-img p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+}
 
 
 
@@ -418,24 +486,49 @@ td {
   }
 
   .bmi-title {
-    align-items: center;
     margin: 10px 0 10px;
   }
 
   .bmi-title h2 {
-    width: 236px;
-    margin: 14px 0px;
-    font-size: 32px;
-    font-weight: 900;
+    margin: 12px 0px;
+    font-size: 28px;
+    font-weight: 700;
   }
 
   .bmi-title p {
-    width: 353px;
     height: 72px;
     font-size: 14px;
     font-weight: 400;
     margin-top: 14px 0px;
     margin-left: 14px;
   }
+  .bmi-table {
+    margin-left: 14px;
+  }
+  .bmi-table h2{
+    margin-top: 15px;
+  }
+  .bmi-dis h2{
+    margin-left: 10px;
+  }
+
+
+  /* BMI calculator section not work  */
+
+
+  .team-img {
+    grid-template-columns: 1fr;
+    margin: 0px 20px;
+    margin: 0px 20px;
+    gap: 10px;
+    align-items: center;
+  }
   
+  .team-box {
+    
+    margin: 5px 0px;
+    align-items: center;
+  }
+
+
 }
