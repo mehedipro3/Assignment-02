@@ -36,6 +36,16 @@ body {
 }
 
 /* nav-bar style list  */
+
+.header {
+  background: linear-gradient(180deg,
+      rgba(19, 19, 19, 0.747) 0%,
+      rgb(30, 30, 30) 50%,
+      rgba(1, 1, 1, 0.719) 100%);
+  /* padding-top: 20px; */
+  display: flow-root;
+}
+
 .fitness i {
   display: none;
 }
@@ -46,6 +56,7 @@ body {
   margin: 0 auto;
   margin-top: 47px;
   align-items: center;
+
 }
 
 .nav-item {
@@ -72,6 +83,14 @@ body {
 }
 
 /* hero section style  */
+
+.box-1 {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+}
 
 #special {
   font-family: 'Miama Nueva', sans-serif;
@@ -291,7 +310,7 @@ td {
   margin: 10px 0;
 }
 
-.bmi-dis  select {
+.bmi-dis select {
   width: 283px;
   height: 48px;
   margin: 0 12px;
@@ -317,8 +336,17 @@ td {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-#factor{
+
+#factor {
   grid-column: span 2;
+}
+
+#factor select {
+  width: 100%;
+}
+
+.bmi-dis select option {
+  color: black;
 }
 
 .bmi-chart button {
@@ -353,13 +381,12 @@ td {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 980px;
-  /* height: 604px; */
   padding: 20px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.1);
   justify-items: center;
   gap: 20px;
-  
+  margin: 0 auto;
 }
 
 .team-img img {
@@ -396,62 +423,71 @@ td {
 }
 
 /* footer section style  */
-.footer-box{
+.footer-box {
   background: rgba(255, 255, 255, 0.1);
   margin-top: 88px;
 }
 
-.footer{
+.footer {
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
 }
 
-.footer-fit h1{
+.footer-fit h1 {
   font-size: 60px;
-font-weight: 800;
-color: rgb(230, 83, 60);
-margin: 20px 0px;
-}
-.footer-fit p{
-  font-size: 14px;
-font-weight: 400;
-margin: 20px 0px;
-color: rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+  margin: 20px 0px;
 }
 
-.footer-title{
+.footer-fit p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px 0px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-title {
   gap: 60px;
   margin-top: 60px;
 }
-.footer-title h{
+
+.footer-title h {
   font-size: 32px;
   font-weight: 700;
 }
-.footer-title ul li{
-font-size: 18px;
-font-weight: 400;
-color: rgba(255, 255, 255, 0.5);
-list-style: none;
-padding: 10px;
-text-align: justify;
+
+.footer-title ul li {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  list-style: none;
+  padding: 10px;
+  text-align: justify;
 }
-.footer-line{
+
+.footer-line {
   max-width: 1050px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   margin: 79px;
 }
-.footer-para p{
+
+.footer-para p {
   color: rgba(255, 255, 255, 0.5);
-font-size: 20px;
-font-weight: 400;
-text-align: center;
-padding-bottom: 35px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 35px;
 }
 
 /* media quary for small devices  */
 
 @media screen and (max-width: 576px) {
+
+body{
+  overflow-x: hidden;
+}
   .nav-list {
     display: none;
   }
@@ -552,16 +588,50 @@ padding-bottom: 35px;
     margin-top: 14px 0px;
     margin-left: 14px;
   }
+
   .bmi-table {
     margin-left: 14px;
   }
-  .bmi-table h2{
+
+  .bmi-table h2 {
     margin-top: 15px;
   }
-  .bmi-dis h2{
-    margin-left: 10px;
+
+  .bmi-dis h2 {
+    width: 353px;
+    height: 48px;
+    margin-left: 20px;
+    margin-top: 20px;
   }
-  
+  .bmi-dis p {
+    width: 346px;
+height: 72px;
+font-size: 14px;
+font-weight: 400;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .bmi-cal {
+    gap: 10px;
+
+    margin: 0 auto;
+  }
+
+  .bmi-dis select {
+    width: 100%;
+    height: 48px;
+  }
+
+  .bmi-dis input {
+    width: 100%;
+    height: 48px;
+  }
+
+  #factor select {
+    width: 100%;
+    height: 48px;
+  }
 
   /* BMI calculator section not work  */
 
@@ -573,24 +643,27 @@ padding-bottom: 35px;
     gap: 10px;
     align-items: center;
   }
-  
+
   .team-box {
-    
+
     margin: 5px 0px;
     align-items: center;
   }
+
   .footer-title,
-  .footer{
+  .footer {
     flex-direction: column;
   }
-  .footer-title{
+
+  .footer-title {
     justify-content: left;
     width: 353px;
-height: 518px;
+    height: 518px;
   }
+
   .footer-line {
     margin-left: 40px;
     margin-top: 10px;
   }
-  
+
 }
