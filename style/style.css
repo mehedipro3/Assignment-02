@@ -84,18 +84,57 @@ body {
 
 /* hero section style  */
 
-.hero-img-card{
+.hero-img-card {
   position: relative;
 }
-.card-1 ,.card-2{
+
+.card-1,
+.card-2 {
   position: absolute;
 }
-.card-1{
-  bottom: 60px;
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: rgb(230, 83, 60);
+  border-radius: 50%;
 }
-.card-2{
+
+.card-1,
+.card-2 {
+  bottom: 60px;
+  width: 155px;
+  height: 70px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+}
+
+.card-1 {
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.card-2 {
   right: 20px;
   top: 190px;
+
+}
+.card-2 h2{
+  font-size: 30px;
+font-weight: 900;
+}
+.card-2 p ,.card-1 p{
+  color: rgba(255, 255, 255, 0.65);
+font-size: 13px;
+font-weight: 400;
+}
+
+.card-2-title{
+  margin: 7px 10px;
 }
 
 #special {
@@ -491,9 +530,10 @@ td {
 
 @media screen and (max-width: 576px) {
 
-body{
-  overflow-x: hidden;
-}
+  body {
+    overflow-x: hidden;
+  }
+
   .nav-list {
     display: none;
   }
@@ -596,7 +636,8 @@ body{
   }
 
   .bmi-table {
-    margin-left: 14px;
+    margin-left: 23px;
+    margin-right: auto;
   }
 
   .bmi-table h2 {
@@ -609,11 +650,12 @@ body{
     margin-left: 20px;
     margin-top: 20px;
   }
+
   .bmi-dis p {
     width: 346px;
-height: 72px;
-font-size: 14px;
-font-weight: 400;
+    height: 72px;
+    font-size: 14px;
+    font-weight: 400;
     margin-left: 20px;
     margin-top: 20px;
   }
