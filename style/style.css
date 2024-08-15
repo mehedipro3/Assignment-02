@@ -467,6 +467,74 @@ td {
   font-weight: 400;
 }
 
+/* pricing section style  */
+
+.price-title{
+  text-align: center;
+  margin: 75px 0;
+}
+
+.price-title h2{
+  font-size: 38px;
+  font-weight: 900;
+}
+.price-title p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 14px 0px;
+}
+
+.price-boxs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.price-card{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+}
+.price-card-content{
+  flex: 1;
+  margin-bottom: 1rem;
+}
+.price-card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.price-card h3 {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.price-card p {
+  margin-bottom: 0.75rem;
+}
+.price-btn{
+  width: 200px;
+  height: 48px;
+  padding: 11px 30px 11px 30px;
+  margin: 10px 0px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+}
+.price-border{
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+
+
 /* footer section style  */
 .footer-box {
   background: rgba(255, 255, 255, 0.1);
@@ -681,7 +749,7 @@ td {
     height: 48px;
   }
 
-  /* BMI calculator section not work  */
+
 
 
   .team-img {
@@ -696,6 +764,10 @@ td {
 
     margin: 5px 0px;
     align-items: center;
+  }
+
+  .price-boxs{
+    grid-template-columns: 1fr;
   }
 
   .footer-title,
