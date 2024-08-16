@@ -10,13 +10,6 @@
     "slnt" 0;
 }
 
-/* * {
-  border: 1px solid red;
-}
-body{
-  border: 3px dashed green;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +24,7 @@ body {
 
 
 /* shared style list  */
+
 .display-flex {
   display: flex;
 }
@@ -42,7 +36,6 @@ body {
       rgba(19, 19, 19, 0.747) 0%,
       rgb(30, 30, 30) 50%,
       rgba(1, 1, 1, 0.719) 100%);
-  /* padding-top: 20px; */
   display: flow-root;
 }
 
@@ -123,17 +116,20 @@ body {
   top: 190px;
 
 }
-.card-2 h2{
+
+.card-2 h2 {
   font-size: 30px;
-font-weight: 900;
-}
-.card-2 p ,.card-1 p{
-  color: rgba(255, 255, 255, 0.65);
-font-size: 13px;
-font-weight: 400;
+  font-weight: 900;
 }
 
-.card-2-title{
+.card-2 p,
+.card-1 p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.card-2-title {
   margin: 7px 10px;
 }
 
@@ -241,7 +237,6 @@ font-weight: 400;
 
 .run-section {
   width: 1060px;
-  /* height: 371px; */
   border-radius: 18px;
   background: rgb(34, 34, 34);
   margin: 62px 0px;
@@ -251,8 +246,6 @@ font-weight: 400;
 }
 
 .run-title h2 {
-  /* width: 443px; */
-  /* height: 116px; */
   margin: 14px 0px;
   color: rgb(255, 255, 255);
   font-family: Inter;
@@ -289,6 +282,7 @@ font-weight: 400;
 }
 
 /* BMI calculator style  */
+
 .bmi-title {
   margin: 78px 0 80px;
   text-align: justify;
@@ -469,28 +463,30 @@ td {
 
 /* pricing section style  */
 
-.price-title{
+.price-title {
   text-align: center;
   margin: 75px 0;
 }
 
-.price-title h2{
+.price-title h2 {
   font-size: 38px;
   font-weight: 900;
 }
-.price-title p{
+
+.price-title p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   font-weight: 400;
   margin: 14px 0px;
 }
 
-.price-boxs{
+.price-boxs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.price-card{
+
+.price-card {
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
@@ -501,10 +497,12 @@ td {
   height: 500px;
   margin: 0 auto;
 }
-.price-card-content{
+
+.price-card-content {
   flex: 1;
   margin-bottom: 1rem;
 }
+
 .price-card h4 {
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -517,10 +515,12 @@ td {
   font-size: 2rem;
   font-weight: 700;
 }
+
 .price-card p {
   margin-bottom: 0.75rem;
 }
-.price-btn{
+
+.price-btn {
   width: 200px;
   height: 48px;
   padding: 11px 30px 11px 30px;
@@ -528,7 +528,8 @@ td {
   border-radius: 42px;
   background: rgb(230, 83, 60);
 }
-.price-border{
+
+.price-border {
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   margin-bottom: 13px;
@@ -536,6 +537,8 @@ td {
 
 
 /* footer section style  */
+
+
 .footer-box {
   background: rgba(255, 255, 255, 0.1);
   margin-top: 88px;
@@ -750,8 +753,6 @@ td {
   }
 
 
-
-
   .team-img {
     grid-template-columns: 1fr;
     margin: 0px 20px;
@@ -766,7 +767,7 @@ td {
     align-items: center;
   }
 
-  .price-boxs{
+  .price-boxs {
     grid-template-columns: 1fr;
   }
 
@@ -782,7 +783,6 @@ td {
   }
 
   .footer-line {
-    margin-left: 40px;
     margin-top: 10px;
   }
 
